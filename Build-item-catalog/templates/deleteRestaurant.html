@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet"  href="{{url_for('static',filename='bootstrap.min.css')}}">
+		<link rel="stylesheet"  href="{{url_for('static',filename='styles.css')}}">
+	</head>
+    <body>
+		<div class="container">
+				<header class="head">
+					<div class="row">
+							<div class="col-md-4 col-sm-4 col-xs-4">
+								<h2>Restaurants </h2>
+							</div>
+							<div class="col-md-4 col-sm-5 col-xs-5">
+								<img class="img-responsive" src="{{url_for('static',filename='organic-restaurant-logo-D34AC3E788-seeklogo.com.png')}}" alt="logo">
+						    </div>
+						    <div class="col-md-4 col-sm-3 col-xs-3">
+								<a class="btn btn-success" href="{{url_for('disconnect')}}">Logout</a>
+							</div>
+					   </div>
+			  </header>	
+			<section class="delres">
+				<h2>are you sure delete Restaurant <span>{{Rest.name}}</span></h2>
+				<form action="{{url_for('deleteRestaurant',restaurant_id=restaurant_id)}}" method = 'POST'>
+				<div class="form-group col-sm-1">
+					<button type="submit" class="btn btn-danger">Delete</button>
+				</div>
+				<div class="form-group col-sm-1">
+					 <a class="btn btn-default" type="button" href="{{url_for('showRestaurants')}}" role="button">Cancel</a>
+				</div>
+				</form>	
+			</section>
+		</div>
+		<script src="{{url_for('static',filename='jquery-3.3.1.min.js')}}"></script>
+		<script src="{{url_for('static',filename='bootstrap.min.js')}}"></script>
+   </body>
+</html>

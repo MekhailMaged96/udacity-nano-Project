@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet"  type="text/css"  href="{{url_for('static',filename='bootstrap.min.css')}}">
+		<link rel="stylesheet"  type="text/css"  href="{{url_for('static',filename='styles.css')}}">
+	</head>
+    <body>
+		<div class="container">
+				<header class="head">
+					<div class="row">
+							<div class="col-md-4 col-sm-4 col-xs-4">
+								<h2>Restaurants </h2>
+							</div>
+							<div class="col-md-4 col-sm-5 col-xs-5">
+								<img class="img-responsive" src="{{url_for('static',filename='organic-restaurant-logo-D34AC3E788-seeklogo.com.png')}}" alt="logo">
+						    </div>
+						    <div class="col-md-4 col-sm-3 col-xs-3">
+								<a class="btn btn-success" href="{{url_for('disconnect')}}">Logout</a>
+							</div>
+					   </div>
+			  </header>	
+				<h1>New Restaurant</h1>
+				<form action="{{url_for('newRestaurant')}}" method='POST' class="form-horizontal">
+					<div class="form-group">
+					<label class="col-sm-2 control-label">Name:</label>
+					<div class="col-sm-8">
+						  <input type="text" class="form-control" id="exampleInputEmail1" name="name" size ="50" placeholder="Name" required>
+						   <br>
+						   <button type="submit" class="btn btn-default">Submit</button>
+					</div>
+					</div>
+				</form>
+		</div>
+		<script src="{{url_for('static',filename='jquery-3.3.1.min.js')}}"></script>
+		<script src="{{url_for('static',filename='bootstrap.min.js')}}"></script>
+   </body>
+</html>

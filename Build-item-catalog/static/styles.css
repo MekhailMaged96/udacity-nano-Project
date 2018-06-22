@@ -1,0 +1,219 @@
+*{
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+body {
+	
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
+}
+.buttlog {
+	width: 100%;
+	margin: 5px 40%;
+	
+}
+.head {
+	background-color:#ffb3b3;
+	width:80%;
+	margin: 0px 8%;
+}
+.head img {
+	width: 100px;
+	height: 100px;
+	max-width: 100%;
+	max-height: 100%;
+	
+}
+.head a {
+	margin-top: 40px;
+	margin-right: 5px;
+	float: right;
+	
+}
+.head h2 {
+	font-family: "Times New Roman", Times, serif;
+	
+	text-transform: uppercase;
+	word-wrap: normal;
+	margin: 0;
+	padding-left: 10px;
+	font-weight: normal;
+	padding-top: 30px;
+}
+.clear {
+	clear: both;
+}
+h1 {
+	text-align:left;
+	margin-left:17%;
+	color:#FF0000;
+}
+.flash {
+	background: #cee5F5; 
+	padding: 0.5em;
+    border: 1px solid #aacbe2;
+	margin: 10px 0 ;
+	
+}
+.partres1 {
+	width:60%;
+	margin: 20px 17%;
+}
+.partres2 {
+	
+	width: 60%;
+	margin: 20px 17%;
+	background-color: #DDD;
+	
+}
+.partres2 p {
+	margin-left: 10px;
+	font-size: 18px;
+	font-weight: bold;
+	
+}
+.partres2 ul li {
+	
+	list-style: none;
+	display: inline;
+
+}
+
+.partres2 ul {
+	
+	text-align: right;
+}
+
+/*************************************************************/
+
+.editres {
+	
+	width:80%;
+	margin: 0px 8%;
+	
+}
+/*************************************************************/
+.delres h2 {
+	text-align:left;
+	color:#FF0000;
+}
+.delres h2 span  {
+	color: 	#7B68EE;
+	font-style: italic;
+}
+/***************************************/
+.menupart2 {
+	
+	width: 65%;
+	margin: 20px 17%;
+	background-color: #DDD;
+}
+
+.menupart2 article {
+	background-color: 	#FF8C00;
+	margin: 20px;
+	
+	
+}
+.menupart2 article span {
+	display: inline;
+	
+	
+}
+.menupart2 ul li {
+	list-style: none;
+	display: inline;
+	
+}
+.menupart2 ul {
+	
+	text-align: right;
+}
+.menupart2 h3,a
+{
+	margin-left: 3%;
+}
+.menupart2 p {
+	font-family: "Times New Roman", Times, serif;
+	margin: 10px;
+	color: #000;
+	font-size: 1.2em;
+	
+}
+/***************************************/
+.editmenu,.delmenu,.delres  {
+	width:80%;
+	margin: 0px 8%;
+}
+
+.delmenu h2 {
+	text-align:left;
+	margin-left: 1%;
+	padding-bottom: 20px;
+	color:#FF0000;
+}
+.delmenu h2 span {
+	color: 	#7B68EE;
+	font-style: italic;
+}
+@media screen and (max-width:789px) {
+	
+	
+	.head h2 {
+		
+		font-size: 1.5em;
+	}
+}
+@media screen and (max-width:434px) {
+	
+	
+	.head h2 {
+		
+		font-size: 1.1em;
+	}
+}
+
+@media screen and (max-width:324px) {
+		.partres2 p {
+			margin-left: 10px;
+			font-size: 12px;
+			font-weight: bold;
+
+		}
+	    .partres2 a {
+			
+			font-size: 12px;
+			
+
+		}
+			.partres1 a {
+			
+			font-size: 12px;
+			
+
+		}
+	 .head h2 {
+			font-family: "Times New Roman", Times, serif;
+			text-transform: uppercase;
+			word-wrap: normal;
+			margin: 0;
+			padding: 0;
+			font-weight: normal;
+			padding-top: 50px;
+			font-size: 12px;
+		
+	}
+	.head a {
+		margin-right: 0px;
+	}
+	.editres a,button  {
+	  margin:2px;	
+	}
+
+}
